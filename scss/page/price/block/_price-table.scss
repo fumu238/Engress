@@ -1,0 +1,140 @@
+@import '../../../../scss/setting/config';
+
+.price-table {
+    padding: 60px 4vw;
+
+    &__title {
+        font-size: 3.2rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: calc(50/32);
+        margin-bottom: 100px;
+    }
+
+    &__wrapper {
+        max-width: 900px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        line-height: calc(27/16);
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    &__container {
+        flex: 0 0 220px;
+    }
+
+    &__content-title {
+        background-color: $navyColor;
+        color: #FFFFFF;
+        line-height: calc(35/16);
+        padding: 15px 0;
+        margin-right: 5px;
+
+
+        &--bgc-orange {
+            background-color: $orangeColor;
+            margin-top: -35px;
+        }
+    }
+
+    &__content {
+        padding: 30px 18px;
+        border-bottom: solid 0.5px $navyColor;
+        border-right: solid 0.5px $navyColor;
+        border-left: solid 0.5px $navyColor;
+        box-sizing: border-box;
+        height: 440px;
+        margin-right: 5px;
+    }
+    .mr-none {
+        margin-right: 0;
+    }
+
+    &__price {
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: calc(40/25);
+        margin-bottom: 10px;
+
+        &--color-orange {
+            color: $orangeColor;
+        }
+    }
+
+    &__monthly {
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        position: relative;
+
+        &::before {
+            content: url(/img/check.png);
+            margin-right: 10px ;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    .price-table {
+        padding: 40px 4vw;
+    
+        &__title {
+            font-size: 2.8rem;
+            line-height: calc(44/28);
+            margin-bottom: 50px;
+        }
+    
+        &__wrapper {
+            max-width: 730px;
+            font-size: 1.4rem;
+            line-height: calc(22/14);
+        }
+    
+        &__container {
+            flex: 0 0 180px;
+        }
+    
+        &__content-title {
+            font-size: 1.6rem;
+    
+        }
+    
+        &__price {
+            font-size: 2rem;
+            line-height: calc(32/20);
+        }
+    
+        &__monthly {
+            margin-bottom: 30px;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .price-table {
+    
+        &__wrapper {
+            overflow: scroll;
+        }
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .price-table {
+        &__content {
+            padding: 30px 2vw;
+    
+        }
+    
+    }
+}

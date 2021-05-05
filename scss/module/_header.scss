@@ -1,0 +1,151 @@
+@import "../setting/config";
+
+/* ヘッダー */
+.header {
+	height: 80px;
+	width: 100%;
+	background-color: #fff;
+	color: $navyColor;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 15px;
+	box-sizing: border-box;
+    transition: .3s;
+    backface-visibility: hidden;
+
+    &__inner {
+        display: flex;
+    }
+
+	&__burger-btn {
+        position: fixed;
+		right: 15px;
+		top: 15px;
+	}
+
+	&__logo {
+		vertical-align: -8px;
+        margin-right: 28px;
+	}
+
+    &--clone {
+        position: fixed;
+        top: 0;
+        left:0;
+        z-index: 2;
+        width: 100%;
+        background-color: #fff;
+        transform: translateY(-100%);
+    }
+
+    &--show {
+        transform: translateY(0);
+    }
+}
+
+
+button {
+	border: 0;
+}
+
+/* ヘッダー資料請求 */
+.header-contact {
+	font-size: 0;
+	display: flex;
+	align-items: flex-end;
+
+	&__item {
+		text-align: right;
+		display: inline-block;
+		margin-right: 23px;
+		box-sizing: border-box;
+	}
+
+	&__time {
+		font-size: $miniFsz;
+		line-height: calc(20 / 12);
+		margin-bottom: 5px;
+	}
+	&__tel {
+		font-size: $paraFsz;
+		font-weight: bold;
+		line-height: 0.1;
+
+		&::before {
+			content: url(../../img/phone.png);
+			margin-right: 4px;
+			vertical-align: -2px;
+		}
+	}
+
+	&__btn {
+		display: inline-block;
+		text-align: center;
+		width: 140px;
+		color: #ffffff;
+		font-size: 1.4rem;
+		font-weight: bold;
+		line-height: calc(24 / 14);
+		padding: 13px 0;
+		border-radius: 5px;
+
+		&:first-of-type {
+			margin-right: 10px;
+		}
+
+		&--orange {
+			background-color: $orangeColor;
+		}
+		&--navy {
+			background-color: $navyColor;
+		}
+	}
+}
+
+@media screen and (max-width: 1050px) {
+
+    .header {
+        height: 60px;
+
+        &__logo {
+            vertical-align: -6px;
+        }
+    }
+	/* ヘッダー資料請求 */
+	.header-contact {
+		&__item {
+			margin-right: 6px;
+		}
+        &__time {
+            margin-bottom: 0;
+        }
+		&__tel {
+			font-size: 1.4rem;
+		}
+		&__btn {
+			width: 90px;
+			font-size: 1.2rem;
+			padding: 8px 0;
+
+            &:first-of-type {
+                margin-right: 6px;
+            }
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+
+	.header-contact {
+        display: none;
+	}
+	.header__gnav {
+		display: none;
+	}
+
+}

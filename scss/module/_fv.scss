@@ -1,0 +1,66 @@
+@import "../setting/config";
+/* ファーストビュー */
+.fv {
+	background-image: url(/img/fv.jpg);
+	background-position: center;
+	background-size: cover;
+	color: #ffffff;
+	padding: 110px 20px 86px;
+	text-align: center;
+	margin-top: 80px;
+
+	&__title {
+		font-size: $headingFsz1;
+		font-weight: bold;
+		margin-bottom: 16px;
+		line-height: 1.35416;
+	}
+
+	&__txt {
+		font-size: 1.8rem;
+		line-height: 2;
+		margin-bottom: 43px;
+		line-height: 1.72;
+	}
+
+	&__btn {
+		display: block;
+		width: 260px;
+		font-size: 1.6rem;
+		padding: 17px 0;
+		border-radius: 50px;
+		margin: 0 auto;
+		background-color: $orangeColor;
+		cursor: pointer;
+		margin-bottom: 22px;
+		line-height: 1.81;
+	}
+
+	&__link {
+		font-size: 1.6rem;
+		text-decoration: underline;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.fv {
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.fv {
+		padding: 90px 4vw 70px;
+
+		&__title {
+			font-size: 4rem;
+			font-weight: bold;
+			margin-bottom: 16px;
+			line-height: 1.35416;
+		}
+
+		&__btn {
+			width: 220px;
+			padding: 14px 0;
+		}
+	}
+}

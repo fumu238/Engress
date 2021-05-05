@@ -1,0 +1,84 @@
+@import "../setting/config";
+@import '../mixin/title';
+
+/* 記事内CSS */
+.single-content {
+    padding: 40px 0;
+    color: $navyColor;
+
+    h1 {
+        @include title(2.8rem);
+        margin: 30px 0;
+    }
+    h2 {
+        @include title(2.6rem);
+        margin: 30px 0;
+    }
+    h3 {
+        @include title(2.2rem);
+        margin: 30px 0;
+        border-left: 4px solid $navyColor;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    h4 {
+        @include title(2.0rem);
+    }
+    h5 {
+        @include title(1.8rem);
+    }
+    h5 {
+        @include title(1.6rem);
+    }
+    h6 {
+        @include title(1.6rem);
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin-bottom: 1.6em;
+    }
+    blockquote {
+        position: relative;
+        padding: 20px 20px 20px 75px;
+        background-color: $skinColor;
+        margin-bottom: 30px;
+
+        &::before {
+            content: "“";
+            position: absolute;
+            top: 8px;
+            left: 20px;
+            font-size: 9rem;
+            color: $grayColor;
+        }
+    }
+    ul {
+        margin: 30px 0;
+    }
+    li {
+        font-size: 1.6rem;
+        padding-left: 1.5em;
+        position: relative;
+        margin: 1rem 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 11px;
+            height: 11px;
+            background-color: $orangeColor;
+            border-radius: 50%;
+            top: 3px;
+            left: 1px;
+        }
+    }
+    a {
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: 1.4;
+        color: $orangeColor;
+        text-decoration: underline;
+        // margin-bottom: 1.6em;
+    }
+}

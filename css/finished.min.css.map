@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,AAAC,CACN,OAAO,CAAE,QAAQ,CACjB,KAAK,CCAG,OAAO,CDiBlB,AAfI,AAAD,gBAAQ,AAAC,CACL,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,MAAM,CACd,UAAU,CAAE,MAAM,CACrB,AACA,AAAD,cAAM,AAAC,CACH,SAAS,CAAE,MAAM,CACjB,WAAW,CAAE,WAAW,CACxB,aAAa,CAAE,IAAI,CACtB,AACA,AAAD,eAAO,AAAC,CACJ,SAAS,CAAE,MAAM,CACjB,WAAW,CAAE,WAAW,CACxB,eAAe,CAAE,SAAS,CAC7B",
+    "sources": [
+        "../scss/page/finished/finished.scss",
+        "../scss/setting/_config.scss"
+    ],
+    "names": [],
+    "file": "finished.min.css"
+}

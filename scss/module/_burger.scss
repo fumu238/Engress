@@ -1,0 +1,47 @@
+@import "../setting/config";
+
+/* ハンバーガーボタン */
+@media screen and (min-width: 761px) {
+	.burger-btn {
+		display: none;
+	}
+}
+
+.burger-btn {
+	z-index: 10;
+
+	&__line {
+		display: block;
+		background-color: $navyColor;
+		width: 30px;
+		height: 3px;
+		border-radius: 10px;
+		margin-bottom: 5px;
+		transition: 0.3s;
+
+		&:last-of-type {
+			margin-bottom: 2px;
+		}
+	}
+
+    &__txt {
+        transition: .3s;
+    }
+
+	&--cross .burger-btn__line:first-of-type {
+		transform: translateY(8px) rotate(215deg);
+		background-color: #ffffff;
+	}
+	&--cross .burger-btn__line:nth-last-of-type(2) {
+		transform: rotate(360deg);
+		opacity: 0;
+	}
+	&--cross .burger-btn__line:last-of-type {
+		transform: translateY(-8px) rotate(-215deg);
+		background-color: #ffffff;
+	}
+
+	&--cross .burger-btn__txt {
+		color: #ffffff;
+	}
+}

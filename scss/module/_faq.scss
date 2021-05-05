@@ -1,0 +1,160 @@
+@import "../setting/config";
+
+/* よくある質問 */
+.faq {
+	padding: 60px 20px 30px;
+	color: $navyColor;
+
+	&__title {
+		font-size: 3.6rem;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 30px;
+		line-height: calc(50 / 36);
+	}
+
+	&__list {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	&__item {
+		border-top: solid 1px $navyColor;
+		font-size: 1.6rem;
+
+		&:last-of-type {
+			border-bottom: solid 1px $navyColor;
+		}
+	}
+
+	&__question {
+		position: relative;
+		line-height: calc(27 / 16);
+		padding: 25px 45px 25px 0;
+		cursor: pointer;
+
+		&::before {
+			content: "";
+			position: absolute;
+			line-height: calc(27 / 16);
+			top: 50%;
+			right: 15px;
+			width: 25px;
+			height: 3px;
+			background-color: $navyColor;
+			transform: translateY(-50%);
+			transition: 0.5s;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 26px;
+			width: 3px;
+			height: 25px;
+			background-color: $navyColor;
+			transform: translateY(-50%);
+			transition: 0.5s;
+		}
+
+		&--rotate::before {
+			transform: translateY(-50%) rotate(45deg);
+		}
+		&--rotate::after {
+			transform: translateY(-50%) rotate(45deg);
+		}
+
+	}
+
+
+
+	&__answer {
+		line-height: calc(27 / 16);
+		background-color: $skinColor;
+		margin-bottom: 15px;
+		padding: 19px 0 19px 26px;
+		display: none;
+	}
+}
+
+.faq__question .faq__question--rotate::before {
+	content: "";
+	position: absolute;
+	line-height: calc(27 / 16);
+	top: 50%;
+	right: 15px;
+	width: 25px;
+	height: 3px;
+	background-color: $navyColor;
+	transform: translateY(-50%);
+	transform: rotate(45deg);
+}
+
+
+
+@media screen and (max-width: 1050px) {
+	/* よくある質問 */
+	.faq {
+		padding: 40px 20px 30px;
+
+		&__title {
+			font-size: 3.2rem;
+			line-height: calc(45 / 32);
+		}
+
+		&__list {
+			max-width: 730px;
+		}
+
+		&__answer {
+			line-height: calc(27 / 16);
+			background-color: $skinColor;
+			margin-bottom: 15px;
+			padding: 19px 0 19px 26px;
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+	/* よくある質問 */
+	.faq {
+		&__list {
+			max-width: 550px;
+		}
+
+		&__item {
+			border-top: solid 1px $navyColor;
+			font-size: 1.4rem;
+
+			&:last-of-type {
+				border-bottom: solid 1px $navyColor;
+			}
+		}
+
+		&__question {
+			position: relative;
+			line-height: calc(22 / 14);
+			padding: 20px 35px 20px 0;
+
+			&::before {
+				right: 17px;
+				width: 20px;
+				height: 2px;
+			}
+			&::after {
+				right: 26px;
+				width: 2px;
+				height: 20px;
+			}
+		}
+
+		&__answer {
+			line-height: calc(27 / 16);
+			background-color: $skinColor;
+			margin-bottom: 15px;
+			padding: 15px 10px 15px 26px;
+			// display:none;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+/* 料金プランはこちら */
+.price-guide {
+    background-image: url(/img/price.png);
+    background-size: cover;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 60px 0 50px;
+
+    &__title {
+        font-size: 2.6rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+        line-height: calc(39/26);
+    }
+
+    &__btn {
+        display: inline-block;
+        border: solid 1px #FFFFFF;
+        border-radius: 50px;
+        width: 200px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: calc(27/16);
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .price-guide {
+        max-width: 730px;
+    }
+}
+@media screen and (max-width: 1050px) {
+
+    .price-guide {
+        padding: 40px 4vw 40px;
+    }
+}

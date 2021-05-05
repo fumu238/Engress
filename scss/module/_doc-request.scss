@@ -1,0 +1,125 @@
+@import "../setting/config";
+
+/* 資料請求 */
+
+.doc-request {
+	&__bg {
+		background-image: url(/img/cta.png);
+		background-size: cover;
+		color: #ffffff;
+		padding: 70px 20px 40px;
+		text-align: center;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 3.2rem;
+		font-weight: bold;
+		line-height: calc(54 / 32);
+		margin-bottom: 20px;
+	}
+
+	&__btn {
+		width: 280px;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: calc(27 / 16);
+		display: block;
+		background-color: $orangeColor;
+		padding: 14px 0;
+		border-radius: 40px;
+		margin: 0 auto 22px;
+	}
+
+	&__link {
+		font-size: 1.6em;
+		text-decoration: underline;
+	}
+
+	&__tel {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $navyColor;
+		text-align: center;
+		padding: 10px 20px;
+	}
+
+	&__txt {
+		font-size: 1.6rem;
+		font-weight: bold;
+		line-height: calc(27 / 16);
+		margin: 0 20px 0 -110px;
+	}
+
+	&__tel-num {
+		font-size: 3.6rem;
+		font-weight: bold;
+		line-height: calc(50 / 36);
+		margin-right: 20px;
+	}
+
+	&__date {
+		font-size: 1.6rem;
+		line-height: calc(27 / 16);
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	/* 資料請求 */
+
+	.doc-request {
+		&__bg {
+			padding: 50px 20px 40px;
+		}
+
+		&__title {
+			text-align: center;
+			font-size: 2.8rem;
+			line-height: calc(48 / 28);
+		}
+
+		&__txt {
+			font-size: 1.6rem;
+			font-weight: bold;
+			line-height: calc(27 / 16);
+			margin: 0 20px 0 -110px;
+		}
+
+		&__tel-num {
+			font-size: 3.2rem;
+			line-height: calc(45 / 32);
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+	/* 資料請求 */
+
+	.doc-request {
+		&__bg {
+			padding: 50px 20px 40px;
+		}
+
+
+		&__btn {
+			width: 230px;
+		}
+
+		&__tel {
+			flex-direction: column;
+		}
+
+		&__txt {
+			font-size: 1.6rem;
+			font-weight: bold;
+			line-height: calc(27 / 16);
+			margin: 0 20px 0 0;
+		}
+
+		&__tel-num {
+			font-size: 2.8rem;
+			line-height: calc(37 / 28);
+		}
+	}
+}

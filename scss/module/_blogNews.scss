@@ -1,0 +1,197 @@
+@import "../setting/config";
+
+/* ブログ・お知らせ */
+.blogNews {
+	padding: 60px 20px 30px;
+
+	&__inner {
+		max-width: 900px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+/* ブログ */
+.blog {
+	flex: 0 0 430px;
+
+	&__title {
+		font-size: 3.2rem;
+		font-weight: bold;
+		margin-bottom: 30px;
+		line-height: calc(54 / 32);
+	}
+
+	&__item {
+		display: flex;
+		margin-bottom: 30px;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	&__img-wrapper {
+		position: relative;
+		max-width: 150px;
+	}
+
+	&__cat {
+		position: absolute;
+		background-color: $navyColor;
+		color: #fff;
+		top: 0;
+		left: 0;
+		padding: 5px 11px;
+	}
+
+	&__txt-wrapper {
+		position: relative;
+		margin-left: 20px;
+	}
+
+	&__item-title {
+		font-size: 1.6rem;
+		font-weight: bold;
+		line-height: calc(54 / 32);
+		text-decoration: underline;
+	}
+	&__date {
+		position: absolute;
+		font-size: 1.2rem;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.news {
+	flex: 0 0 400px;
+
+	&__title {
+		font-size: 3.2rem;
+		font-weight: bold;
+		margin-bottom: 30px;
+		line-height: calc(54 / 32);
+	}
+
+	&__item {
+		margin-bottom: 35px;
+	}
+
+	&__date {
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+		line-height: calc(20 / 12);
+	}
+	&__item-title {
+		font-size: 1.6rem;
+		line-height: calc(27 / 16);
+		text-decoration: underline;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	/* ブログ・お知らせ */
+	.blogNews {
+		padding: 40px 20px 30px;
+
+		&__inner {
+			max-width: 730px;
+			margin: 0 auto;
+		}
+	}
+
+	/* ブログ */
+	.blog {
+        flex: 0 0 350px;
+
+		&__title {
+			font-size: 2.8rem;
+			margin-bottom: 20px;
+			line-height: calc(48 / 28);
+		}
+
+		&__item {
+			display: flex;
+			margin-bottom: 30px;
+		}
+		&__item-title {
+			line-height: calc(22 / 16);
+		}
+
+	}
+
+	.news {
+        flex: 0 0 300px;
+
+		&__title {
+			font-size: 2.8rem;
+			margin-bottom: 20px;
+			line-height: calc(48 / 28);
+		}
+
+		&__date {
+			font-size: 1.2rem;
+			margin-bottom: 10px;
+			line-height: calc(20 / 12);
+		}
+		&__item-title {
+			font-size: 1.6rem;
+			line-height: calc(27 / 16);
+		}
+	}
+}
+
+
+@media screen and (max-width: 760px) {
+	/* ブログ・お知らせ */
+	.blogNews {
+
+		&__inner {
+			max-width: 90%;
+			flex-direction: column;
+		}
+	}
+
+	/* ブログ */
+	.blog {
+		margin: 0 auto;
+
+		&__title {
+			text-align: center;
+		}
+	}
+
+	.news {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.blogNews {
+		padding: 40px 4vw 30px;
+	}
+
+	.blog {
+		flex: none;
+		width: 100%;
+
+		&__item-title {
+            font-size: 1.4rem;
+			line-height: calc(22 / 16);
+		}
+
+		&__txt-wrapper {
+			margin-left: 10px;
+		}
+	}
+
+	.news {
+		&__item-title {
+			font-size: 1.4rem;
+			line-height: calc(20 / 14);
+		}
+	}
+}
