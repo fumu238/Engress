@@ -1,0 +1,56 @@
+@import "../setting/config";
+
+/* パンくずリスト */
+.breadcrumb {
+	background-color: $skinColor;
+
+	&__inner {
+		display: flex;
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 19px 0;
+		color: $navyColor;
+	}
+
+	&__link {
+		font-size: 1.2rem;
+		text-decoration: underline;
+		margin-right: 24px;
+		position: relative;
+
+		&::after {
+			content: ">";
+			position: absolute;
+			transform: rotateY(150%);
+			right: -1.5em;
+		}
+	}
+	&__current {
+		font-size: 1.2rem;
+	}
+
+	&--margintop {
+		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.breadcrumb {
+		&__inner {
+			max-width: 730px;
+		}
+
+		&--margintop {
+			margin-top: 60px;
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.breadcrumb {
+        padding: 0 4vw;
+		&__inner {
+			max-width: 550px;
+		}
+	}
+}

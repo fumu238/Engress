@@ -1,0 +1,68 @@
+/* ページネーション */
+.pagination {
+	width: 300px;
+	margin: 0 auto;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		flex: 0 0;
+		border: solid 0.5px $navyColor;
+		text-align: center;
+		font-size: 1.6rem;
+		font-weight: bold;
+		line-height: calc(27 / 16);
+		padding: 10px 0;
+		box-sizing: border-box;
+		cursor: pointer;
+        transition: .5s;
+
+		&:not(:last-of-type) {
+			margin-right: 18px;
+		}
+        &:hover {
+			background-color: $navyColor;
+			color: #ffffff;
+            opacity: .9;
+		}
+	}
+    
+
+	&__link {
+		padding: 17px 20px;
+
+		&:hover {
+			background-color: $navyColor;
+			color: #ffffff;
+		}
+	}
+
+	&--current {
+		background-color: $navyColor;
+		color: #ffffff;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.pagination {
+		width: 215px;
+
+		&__item {
+			flex: 0 0;
+			font-size: 1.4rem;
+			line-height: calc(22 / 14);
+			padding: 5px 0;
+
+			&:not(:last-of-type) {
+				margin-right: 14px;
+			}
+		}
+
+		&__link {
+			padding: 9px 12px;
+		}
+	}
+}

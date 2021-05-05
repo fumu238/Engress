@@ -1,0 +1,211 @@
+@import "../setting/config";
+
+/* 成功事例 */
+.case {
+	background-color: $navyColor;
+	padding: 60px 20px;
+
+	&__title {
+		font-size: 3.6rem;
+		font-weight: bold;
+		text-align: center;
+		color: #ffffff;
+		margin-bottom: 80px;
+		line-height: calc(50 / 36);
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	/* 成功事例アイテム */
+	&-item {
+		width: 31.5%;
+
+		&__txt {
+			color: #ffffff;
+			font-size: 1.6rem;
+			font-weight: bold;
+			line-height: calc(29 / 16);
+			margin-bottom: 10px;
+		}
+
+		&__img-wrapper {
+			background-color: #ffffff;
+			width: 100%;
+			padding-top: 67%;
+			position: relative;
+			margin-bottom: 16px;
+		}
+
+		&__img {
+			width: 50%;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index:1;
+
+			&--1 {
+				width: 45%;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		&__prof {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			color: $navyColor;
+			font-size: 1.6rem;
+		}
+
+		&__cat {
+			display: inline-block;
+			background-color: #ffffff;
+			color: $navyColor;
+			padding: 0 10px;
+			width: 37%;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+			line-height: calc(29 / 16);
+		}
+		&__name {
+			display: inline-block;
+			background-color: #ffffff;
+			color: $navyColor;
+			padding: 0 14px;
+			width: 60%;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+			line-height: calc(29 / 16);
+		}
+		&__score {
+			background-color: #ffffff;
+			color: $navyColor;
+			padding: 0 14px;
+			width: 100%;
+			box-sizing: border-box;
+			line-height: calc(29 / 16);
+		}
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	/* 成功事例 */
+	.case {
+		background-color: $navyColor;
+		padding: 60px 20px;
+
+		&__title {
+			font-size: 3.2rem;
+			margin-bottom: 40px;
+			line-height: calc(42 / 32);
+		}
+
+		&__list {
+			max-width: 730px;
+		}
+
+		/* 成功事例アイテム */
+		&-item {
+			width: 31.5%;
+
+			&__txt {
+				font-size: 1.4rem;
+				line-height: calc(26 / 14);
+			}
+
+			&__prof {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				color: $navyColor;
+				font-size: 1.4rem;
+			}
+
+			&__cat {
+				line-height: calc(25 / 14);
+			}
+			&__name {
+				line-height: calc(25 / 14);
+			}
+			&__score {
+				line-height: calc(25 / 14);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+	/* 成功事例 */
+	.case {
+
+		&__title {
+			font-size: 2.8rem;
+			line-height: calc(42/28);
+		}
+		&__list {
+			max-width: 550px;
+		}
+
+		/* 成功事例アイテム */
+		&-item {
+			&__cat {
+				padding: 0;
+				text-align: center;
+			}
+			&__name {
+				padding: 0;
+				text-align: center;
+			}
+			&__score {
+				padding: 0;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:600px) {
+	.case {
+
+		&__list {
+			flex-direction: column;
+		}
+
+		/* 成功事例アイテム */
+		&-item {
+			width: 100%;
+			margin: 0 auto 30px;
+
+
+			&__img-wrapper {
+				margin-bottom: 16px;
+			}
+
+			&__img {
+				width: 50%;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+
+				&1 {
+					width: 45%;
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,22 @@
+@import "../../../scss/setting/config";
+
+.finished {
+    padding: 80px 4vw;
+    color: $navyColor;
+
+    &__inner {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__txt {
+        font-size: 1.6rem;
+        line-height: calc(27/16);
+        margin-bottom: 80px;
+    }
+    &__link {
+        font-size: 1.6rem;
+        line-height: calc(27/16);
+        text-decoration: underline;
+    }
+}

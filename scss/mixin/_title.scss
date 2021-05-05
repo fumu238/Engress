@@ -1,0 +1,5 @@
+@mixin title($fontSize, ) {
+    font-size: $fontSize;
+    font-weight: bold;
+    line-height: 1.5;
+};

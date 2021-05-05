@@ -1,0 +1,181 @@
+@import "../../../scss/setting/config";
+@import "../../mixin/page-fv";
+
+$imgPath: #{"url(/img/cta.png)"};
+
+.contact {
+	padding: 60px 4vw;
+	color: $navyColor;
+	font-size: 1.6rem;
+	line-height: calc(27 / 16);
+
+	&-fv {
+		@include page-fv($imgPath);
+	}
+
+	&__inner {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	&__description {
+		margin-bottom: 40px;
+	}
+
+	/* フォーム */
+	&__item {
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__label {
+		margin-bottom: 5px;
+
+		&--txt-bold {
+			font-weight: bold;
+		}
+	}
+
+	&__input {
+		height: 50px;
+		border: 0.5px solid;
+		padding: 0 20px;
+
+		&::placeholder {
+			font-size: 1.2rem;
+			color: #b4b4b4;
+		}
+	}
+
+	&__radio-list {
+		margin: 5px 0;
+	}
+
+	&__radio-item {
+		display: flex;
+		align-items: center;
+        
+		&:not(:last-of-type) {
+			margin-bottom: 10px;
+		}
+	}
+	&__radio {
+		width: 20px;
+		height: 20px;
+		margin: 0;
+		margin-right: 18px;
+	}
+	&__textarea {
+		height: 240px;
+		border: 0.5px solid;
+		padding: 20px 20px;
+		margin-bottom: 15px;
+
+		&::placeholder {
+			font-size: 1.2rem;
+			color: #b4b4b4;
+		}
+	}
+
+	&__policy-container {
+		text-align: center;
+	}
+	&__policy {
+		margin-bottom: 20px;
+	}
+
+	&__policy-link {
+		color: $orangeColor;
+		text-decoration: underline;
+	}
+
+	&__agree {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+	&__checkbox {
+		width: 20px;
+		height: 20px;
+		border: 0.5px solid $navyColor;
+		border-radius: 0px;
+		margin-right: 15px;
+	}
+
+	&__submit {
+		width: 200px;
+		text-align: center;
+		background-color: $navyColor;
+		color: #ffffff;
+		padding: 12px 0;
+		border-radius: 5px;
+		transition: 0.3s;
+
+		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.6);
+		}
+		&:active {
+			transform: translateY(0);
+			box-shadow: none;
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+	
+	.contact {
+		padding: 40px 4vw;
+		font-size: 1.4rem;
+		line-height: calc(24 / 14);
+	
+		&__inner {
+			max-width: 550px;
+			margin: 0 auto;
+		}
+		/* フォーム */
+		&__item {
+			margin-bottom: 15px;
+		}
+	
+		&__input {
+			height: 40px;
+		}
+	
+		&__radio-item {
+			&:not(:last-of-type) {
+				margin-bottom: 5px;
+			}
+		}
+
+		&__radio {
+			width: 15px;
+			height: 15px;
+			margin-right: 14px;
+		}
+
+		&__textarea {
+			height: 180px;
+			margin-bottom: 5px;
+		}
+	
+		&__policy {
+			margin-bottom: 15px;
+		}
+	
+		&__agree {
+			margin-bottom: 30px;
+		}
+		&__checkbox {
+			width: 15px;
+			height: 15px;
+		}
+	
+		&__submit {
+			width: 160px;
+			padding: 10px 0;
+		}
+	}
+}

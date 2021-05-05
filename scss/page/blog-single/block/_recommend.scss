@@ -1,0 +1,131 @@
+@import '../../../../scss/setting/config';
+
+.recommend {
+    &__title {
+        font-size: 3.2rem;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        &:not(:last-of-type) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__link {
+        display: flex;
+    }
+
+    &__img-wrapper {
+        flex: 0 0 210px;
+		padding-bottom: 21.697%;
+		height: 0;
+		position: relative;
+        margin-right: 30px;
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		object-fit: cover;
+	}
+
+    &__cat {
+        position:absolute;
+        top: 0;
+        background-color: $navyColor;
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding: 7px 12px;
+    }
+
+    &__date {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+    &__item-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1.5;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .recommend {
+        &__title {
+            font-size: 2.8rem;
+        }
+    
+        &__item {
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
+    
+        &__img-wrapper {
+            flex: 0 0 210px;
+            padding-bottom: 25.697%;
+            margin-right: 20px;
+        }
+
+        &__date {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        &__item-title {
+            font-size: 1.5rem;
+        }
+
+        &__cat {
+            padding: 3px 12px;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .recommend {
+        &__title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+    
+        &__img-wrapper {
+            flex: 0 0 180px;
+            padding-bottom: 22.697%;
+            margin-right: 20px;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .recommend {
+        &__title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+    
+        &__img-wrapper {
+            flex: 0 0 34%;
+            padding-bottom: 22.697%;
+            margin-right: 20px;
+        }
+
+        &__date {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        &__item-title {
+            font-size: 1.4rem;
+        }
+    
+    }
+}

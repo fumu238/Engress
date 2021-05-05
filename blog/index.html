@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engress｜ブログ</title>
+
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- <link rel="stylesheet" href="/blog/style.min.css"> -->
+    <link rel="stylesheet" href="/css/blog.min.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="/" class="title-logo header__logo">
+                <img src="/img/title-logo.png" alt="タイトルロゴ">
+            </a>
+            <nav class="gnav header__gnav">
+                <ul class="gnav__list">
+                    <li class="gnav__item"><a href="/" class="gnav__link">ホーム</a></li>
+                    <li class="gnav__item"><a href="/news/" class="gnav__link">お知らせ</a></li>
+                    <li class="gnav__item"><a href="blog-single/" class="gnav__link">ブログ</a></li>
+                    <li class="gnav__item"><a href="/price/" class="gnav__link">コース・料金</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- / ロゴ・メニュー -->
+
+        <!-- 資料請求 -->
+        <div class="header-contact">
+            <div class="header-contact__item">
+                <p class="header-contact__time">平日08:00〜20:00</p>
+                <p class="header-contact__tel">0123-456-7890</p>
+            </div>
+            <a href="/contact/" class="header-contact__btn header-contact__btn--orange">資料請求</a>
+            <a href="/contact/" class="header-contact__btn header-contact__btn--navy">お問い合わせ</a>
+        </div>
+        <!-- / 資料請求 -->
+
+        <!-- ハンバーガーボタン -->
+        <button class="burger-btn header__burger-btn">
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <p class="burger-btn__txt">MENU</p>
+        </button>
+        <!-- / ハンバーガーボタン -->
+
+        <!-- sp-メニュー -->
+        <div class="sp-nav">
+            <nav>
+                <ul class="sp-nav__list">
+                    <li class="sp-nav__item"><a href="/" class="sp-nav__link">ホーム</a></li>
+                    <li class="sp-nav__item"><a href="/news/" class="sp-nav__link">お知らせ</a></li>
+                    <li class="sp-nav__item"><a href="/blog/" class="sp-nav__link">ブログ</a></li>
+                    <li class="sp-nav__item"><a href="/price/" class="sp-nav__link">コース・料金</a></li>
+                </ul>
+            </nav>
+            <div class="sp-nav__contact-wrapper">
+                <div class="sp-nav__contact-item">
+                    <a href="/contact/" class="sp-nav__btn sp-nav__btn--orange">資料請求</a>
+                    <a href="/contact/" class="sp-nav__btn sp-nav__btn--navy">お問い合わせ</a>
+                </div>
+                <p class="sp-nav__contact-time">平日08:00〜20:00</p>
+                <p class="sp-nav__contact-tel">0123-456-7890</p>
+            </div>
+        </div>
+        <!-- sp-メニュー -->
+    </header>
+
+    <div class="blog-fv">ブログ</div>
+
+    <!-- パンくずリスト -->
+    <div class="breadcrumb">
+        <div class="breadcrumb__inner">
+            <a href="/" class="breadcrumb__link">ホーム</a>
+            <p class="breadcrumb__current">ブログ</p>
+        </div>
+    </div>
+    <!-- / パンくずリスト -->
+
+    <main>
+        <!-- ブログ一覧 -->
+        <section class="blog-index">
+            <div class="blog-index__title">新着一覧</div>
+            <ul class="blog-index__list">
+                <li class="blog-index__item">
+                    <a href="/blog-single/" class="blog-index__link">
+                        <div class="blog-index__img-wrapper">
+                            <img src="/img/feature01.jpg" alt="" class="blog-index__img">
+                            <div class="blog-index__cat">カテゴリ</div>
+                        </div>
+                        <div class="blog-index__txtwrapper">
+                            <div class="blog-index__date">2020-12-01</div>
+                            <div class="blog-index__item-title">ブログタイトル</div>
+                            <div class="blog-index__item-exarpt">記事の抜粋記事の抜粋記事の抜粋
+                                記事の抜粋記事の抜粋記事</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="blog-index__item">
+                    <a href="/blog-single/" class="blog-index__link">
+                        <div class="blog-index__img-wrapper">
+                            <img src="" alt="" class="blog-index__img">
+                            <div class="blog-index__cat">カテゴリ</div>
+                        </div>
+                        <div class="blog-index__txtwrapper">
+                            <div class="blog-index__date">2020-12-01</div>
+                            <div class="blog-index__item-title">ブログタイトルテキストテキストテキストテキストテキストテキスト</div>
+                            <div class="blog-index__item-exarpt">
+                                記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- / ブログ一覧 -->
+
+        <!-- ページネーション -->
+        <div class="pagination blog-index__pagination">
+            <ul class="pagination__list">
+                <li class="pagination__item pagination--current"><a href="#" class="pagination__link">1</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                <li class="pagination__item">•••</li>
+                <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+            </ul>
+        </div>
+        <!-- ページネーション -->
+
+        <!-- 資料請求 -->
+        <section class="doc-request">
+            <div class="doc-request__bg">
+                <h3 class="doc-request__title">まずは無料で資料請求から</h3>
+                <p><a href="/contact/" class="doc-request__btn">資料請求</a></p>
+                <p><a href="/contact/" class="doc-request__link">お問い合わせ</a></p>
+            </div>
+            <div class="doc-request__tel">
+                <div class="doc-request__txt">お電話でのお問い合わせはこちら</div>
+                <div class="doc-request__tel-num">0123-456-7890</div>
+                <div class="doc-request__date">平日 08:00~20:00</div>
+            </div>
+        </section>
+        <!-- /資料請求 -->
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__inner">
+                <nav class="gnav footer__gnav">
+                    <ul class="gnav__list footer__gnav-list">
+                        <li class="gnav__item footer__nav-item"><a href="/" class="link">ホーム</a></li>
+                        <li class="gnav__item footer__nav-item"><a href="/news/" class="link">お知らせ</a></li>
+                        <li class="gnav__item footer__nav-item"><a href="/blog/" class="link">ブログ</a></li>
+                        <li class="gnav__item footer__nav-item"><a href="/price/" class="link">コース・料金</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__info">
+                    <div class="title-logo footer__logo">
+                        <a href="/" class="">
+                            <img src="/img/title-logo.png" alt="タイトルロゴ" class="title-logo__img">
+                        </a>
+                    </div>
+                    <p class="footer__tel">0123-456-7890</p>
+                    <p class="footer__date">平日08:00~20:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <small>© 2020 Engress.</small>
+        </div>
+    </footer>
+    <!-- / フッター -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engress｜お問い合わせ</title>
+
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/contact/style.min.css">
+    <link rel="stylesheet" href="/css/contact.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="/" class="title-logo header__logo">
+                <img src="/img/title-logo.png" alt="タイトルロゴ">
+            </a>
+            <nav class="gnav header__gnav">
+                <ul class="gnav__list">
+                    <li class="gnav__item"><a href="/" class="gnav__link">ホーム</a></li>
+                    <li class="gnav__item"><a href="/news/" class="gnav__link">お知らせ</a></li>
+                    <li class="gnav__item"><a href="/blog/" class="gnav__link">ブログ</a></li>
+                    <li class="gnav__item"><a href="/price/" class="gnav__link">コース・料金</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- / ロゴ・メニュー -->
+
+        <!-- 資料請求 -->
+        <div class="header-contact">
+            <div class="header-contact__item">
+                <p class="header-contact__time">平日08:00〜20:00</p>
+                <p class="header-contact__tel">0123-456-7890</p>
+            </div>
+            <a href="/contact/" class="header-contact__btn header-contact__btn--orange">資料請求</a>
+            <a href="/contact/" class="header-contact__btn header-contact__btn--navy">お問い合わせ</a>
+        </div>
+        <!-- / 資料請求 -->
+
+        <!-- ハンバーガーボタン -->
+        <button class="burger-btn header__burger-btn">
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <p class="burger-btn__txt">MENU</p>
+        </button>
+        <!-- / ハンバーガーボタン -->
+
+        <!-- sp-メニュー -->
+        <div class="sp-nav">
+            <nav>
+                <ul class="sp-nav__list">
+                    <li class="sp-nav__item"><a href="/" class="sp-nav__link">ホーム</a></li>
+                    <li class="sp-nav__item"><a href="/news/" class="sp-nav__link">お知らせ</a></li>
+                    <li class="sp-nav__item"><a href="/blog/" class="sp-nav__link">ブログ</a></li>
+                    <li class="sp-nav__item"><a href="/price/" class="sp-nav__link">コース・料金</a></li>
+                </ul>
+            </nav>
+            <div class="sp-nav__contact-wrapper">
+                <div class="sp-nav__contact-item">
+                    <a href="/contact/" class="sp-nav__btn sp-nav__btn--orange">資料請求</a>
+                    <a href="/contact/" class="sp-nav__btn sp-nav__btn--navy">お問い合わせ</a>
+                </div>
+                <p class="sp-nav__contact-time">平日08:00〜20:00</p>
+                <p class="sp-nav__contact-tel">0123-456-7890</p>
+            </div>
+        </div>
+        <!-- sp-メニュー -->
+    </header>
+
+    <div class="contact-fv">お問い合わせ・資料請求</div>
+
+    <!-- パンくずリスト -->
+    <div class="breadcrumb">
+        <div class="breadcrumb__inner">
+            <a href="/" class="breadcrumb__link">ホーム</a>
+            <p class="breadcrumb__current">お問い合わせ</p>
+        </div>
+    </div>
+    <!-- / パンくずリスト -->
+
+    <main>
+        <div class="contact">
+            <div class="contact__inner">
+                <p class="contact__description">弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記のフォームよりお問い合わせください。</p>
+                <form action="post">
+                    <div class="contact__form">
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <label for="company" class="contact__label">会社名</label>
+                                <input type="text" name="" id="company" class="contact__input" placeholder="Engress">
+                            </li>
+                            <li class="contact__item">
+                                <label for="company" class="contact__label">氏名</label>
+                                <input type="text" name="" id="company" class="contact__input" placeholder="田中　太郎">
+                            </li>
+                            <li class="contact__item">
+                                <label for="company" class="contact__label">メールアドレス</label>
+                                <input type="email" name="" id="company" class="contact__input"
+                                    placeholder="example@example.com">
+                            </li>
+                            <li class="contact__item">
+                                <label for="company" class="contact__label">電話番号</label>
+                                <input type="text" name="" id="company" class="contact__input"
+                                    placeholder="01-2345-6789">
+                            </li>
+                            <li class="contact__item">
+                                <p class="contact__label">お問い合わせの種類を選択してください（
+                                    <span class="contact__label--txt-bold">資料請求の方は資料請求を選択ください</span>）
+                                </p>
+                                <ul class="contact__radio-list">
+                                    <li class="contact__radio-item">
+                                        <input type="radio" name="kind" id="opportunity" class="contact__radio">
+                                        <label for="opportunity" class="contact__radio-label">商談のご相談</label>
+                                    </li>
+                                    <li class="contact__radio-item">
+                                        <input type="radio" name="kind" id="service" class="contact__radio">
+                                        <label for="service" class="contact__radio-label">サービスに関するお問い合わせ</label>
+                                    </li>
+                                    <li class="contact__radio-item">
+                                        <input type="radio" name="kind" id="document" class="contact__radio">
+                                        <label for="document" class="contact__radio-label">資料請求</label>
+                                    </li>
+                                    <li class="contact__radio-item">
+                                        <input type="radio" name="kind" id="other" class="contact__radio">
+                                        <label for="other" class="contact__radio-label">その他</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="contact__item">
+                                <label for="company" class="contact__label">お問い合わせ内容</label>
+                                <textarea type="text" name="" id="company" class="contact__textarea"
+                                    placeholder="入力してください"></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact__policy-container">
+                        <div class="contact__policy">
+                            <a href="#" class="contact__policy-link">
+                                プライバシーポリシー</a>に同意の上、送信ください。
+                        </div>
+                        <div class="contact__agree">
+                            <input type="checkbox" name="" id="agree" class="contact__checkbox">
+                            <label for="agree" class="contact__checkbox-label">プライバシーポリシーに同意する</label>
+                        </div>
+                        <!-- <input type="submit" value="送信する"> -->
+                        <button type="submit" href="/finished/" class="contact__submit">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 資料請求 -->
+        <section class="doc-request">
+            <div class="doc-request__bg">
+                <h3 class="doc-request__title">まずは無料で資料請求から</h3>
+                <p><a href="/contact/" class="doc-request__btn">資料請求</a></p>
+                <p><a href="/contact/" class="doc-request__link">お問い合わせ</a></p>
+            </div>
+            <div class="doc-request__tel">
+                <div class="doc-request__txt">お電話でのお問い合わせはこちら</div>
+                <div class="doc-request__tel-num">0123-456-7890</div>
+                <div class="doc-request__date">平日 08:00~20:00</div>
+            </div>
+        </section>
+        <!-- /資料請求 -->
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__inner">
+                <nav class="gnav footer__gnav">
+                    <ul class="gnav__list footer__gnav-list">
+                        <li class="gnav__item footer__nav-item"><a href="/" class="link">ホーム</a></li>
+                        <li class="gnav__item footer__nav-item"><a href="/news/" class="link">お知らせ</a></li>
+                        <li class="gnav__item footer__nav-item"><a href="/blog/" class="link">ブログ</a></li>
+                        <li class="gnav__item footer__nav-item"><a href="/price/" class="link">コース・料金</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__info">
+                    <div class="title-logo footer__logo">
+                        <a href="/" class="">
+                            <img src="/img/title-logo.png" alt="タイトルロゴ" class="title-logo__img">
+                        </a>
+                    </div>
+                    <p class="footer__tel">0123-456-7890</p>
+                    <p class="footer__date">平日08:00~20:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <small>© 2020 Engress.</small>
+        </div>
+    </footer>
+    <!-- / フッター -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
