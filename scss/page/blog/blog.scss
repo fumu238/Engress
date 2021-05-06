@@ -1,7 +1,7 @@
 @import "../../../scss/setting/config";
 @import "../../mixin/page-fv";
 
-$imgPath: #{"url(/img/blog-fv.png)"};
+$imgPath: #{"url(../img/blog-fv.png)"};
 
 .blog-fv {
 	@include page-fv($imgPath);

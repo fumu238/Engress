@@ -1,6 +1,6 @@
 @import '../../../mixin/page-fv';
 
-$imgPath: #{'url(/img/price-fv.png)'};
+$imgPath: #{'url(../img/price-fv.png)'};
 
 .price-fv {
     @include page-fv($imgPath);
