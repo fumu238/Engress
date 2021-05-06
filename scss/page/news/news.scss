@@ -1,7 +1,7 @@
 @import "../../../scss/setting/config";
 @import "../../mixin/page-fv";
 
-$imgPath: #{"url(/img/news-fv.png)"};
+$imgPath: #{"url(../img/news-fv.png)"};
 
 .news-index {
 	padding: 60px 4vw;
@@ -70,10 +70,6 @@ $imgPath: #{"url(/img/news-fv.png)"};
 	.news-index {
 		padding: 40px 4vw;
 		color: $navyColor;
-	
-		&__fv {
-			@include page-fv($imgPath);
-		}
 	
 		&__title {
 			font-size: 2.8rem;

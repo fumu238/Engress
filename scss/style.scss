@@ -3,10 +3,6 @@
 @import 'base/base';
 @import 'base/reset';
 
-// 共通パンくずリスト
-@import 'module/breadcrumb';
-
-
 // module
 // ヘッダー
 @import 'module/header';
@@ -38,12 +34,8 @@
 @import 'module/footer';
 // 記事部分
 @import 'module/single-content';
-
-
-
-// page
-
-// plugin
+// パンくずリスト
+@import 'module/breadcrumb';
 
 // setting
 @import 'setting/config';
