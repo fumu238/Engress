@@ -46,15 +46,15 @@
 	&__img-wrapper {
 		position: relative;
 		flex: 0 0 150px;
-		padding-bottom: 23.257%;
-		height: 0;
+		height: auto;
 		overflow: hidden;
+		min-width: 100px;
+
 	}
 
 	&__img {
 		width: 100%;
 		height: 100%;
-		position: absolute;
 		object-fit: cover;
 		transition: 0.3s;
 	}
@@ -141,7 +141,6 @@
 		}
 
 		&__img-wrapper {
-			position: relative;
 			flex: 0 0 120px;
 		}
 
@@ -188,7 +187,6 @@
 
 		&__img-wrapper {
 			flex: 0 0 150px;
-			padding-bottom: 18.181%;
 		}
 
 		&__txt-wrapper {
@@ -211,13 +209,18 @@
 		flex: none;
 		width: 100%;
 
+		&__item {
+			&:not(:last-of-type) {
+				margin-bottom: 20px;
+			}
+		}
+
 		&__img-wrapper {
 			flex: 0 0 33%;
-			padding-bottom: 23%;
 		}
 
 		&__txt-wrapper {
-			flex: 0 0 65%;
+			flex: 1 1;
 			margin-left: 10px;
 		}
 	}
