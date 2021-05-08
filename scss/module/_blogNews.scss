@@ -140,12 +140,8 @@
 			line-height: calc(18/14);
 		}
 
-		&__img-wrapper {
-			flex: 0 0 120px;
-		}
-
 		&__txt-wrapper {
-			flex: 0 0 210px;
+			flex: 0 0 180px;
 		}
 	}
 
@@ -185,10 +181,6 @@
 			text-align: center;
 		}
 
-		&__img-wrapper {
-			flex: 0 0 150px;
-		}
-
 		&__txt-wrapper {
 			flex: 0 0 370px;
 		}
@@ -213,10 +205,6 @@
 			&:not(:last-of-type) {
 				margin-bottom: 20px;
 			}
-		}
-
-		&__img-wrapper {
-			flex: 0 0 33%;
 		}
 
 		&__txt-wrapper {
