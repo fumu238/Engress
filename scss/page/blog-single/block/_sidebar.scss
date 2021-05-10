@@ -46,17 +46,10 @@
     &__category-list {
         li {
             list-style: disc inside;
+            font-size: 1.6rem;
+            font-weight: bold;
+            line-height: calc(39/16);
         }
-    }
-
-    &__category-item {
-        font-size: 1.6rem;
-        font-weight: bold;
-        line-height: calc(39/16);
-    }
-
-    &__category-item li {
-        list-style: circle;
     }
 }
 
@@ -73,13 +66,6 @@
             flex: 0 0 100px;
             padding-bottom: 29.5%;
         }
-    
-        &__category-item {
-            font-size: 1.4rem;
-            font-weight: bold;
-            line-height: calc(34/14);
-        }
-    
     }
 }
 
@@ -103,10 +89,12 @@
             font-weight: bold;
         }
     
-        &__category-item {
-            font-size: 1.6rem;
-            font-weight: bold;
-            line-height: calc(39/16);
+        &__category-list {
+            li {
+                font-size: 1.4rem;
+                font-weight: bold;
+                line-height: calc(34/14);
+            }
         }
     }
 }
@@ -122,12 +110,6 @@
         &__img-wrapper {
             flex: 0 0 34%;
             padding-bottom: 22.697%;
-        }
-    
-        &__category-item {
-            font-size: 1.4rem;
-            font-weight: bold;
-            line-height: calc(30/14);
         }
     }
 }
